@@ -8,7 +8,8 @@ double c = double.Parse(Console.ReadLine());
 double P = a + b + c;
 double p = P/2.0;
 double S = Math.Sqrt(p*(p - a)*(p - b)*(p - c));
+double RoundedS = Math.Round (S, 2);
 
 Console.WriteLine ($"Периметр: {P}");
-Console.WriteLine ($"Площадь: {S:F2}");
+Console.WriteLine ($"Площадь: {RoundedS}");
 
